@@ -73,7 +73,7 @@ relative to its own multi-year history, with no reference to fundamentals.
 Run from the project folder:
 
 ```bash
-python3 main.py        # the author's machine has Python 3.12 installed
+python3 main.py        
 ```
 
 What happens on start:
