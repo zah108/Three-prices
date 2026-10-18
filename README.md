@@ -6,9 +6,9 @@
 
 This code was created with the help of an LLM (Large Language Model) assistant.
 
-A financial asset price analysis system: for each instrument it determines which
-of the **three price ranges** its current price falls into, and builds a PDF
-report with a summary table and charts.
+A system for analyzing the prices of financial assets: for each instrument, the system determines which of three price ranges its current price falls into, and generates a PDF report containing a summary table and charts. The configuration file (Config) lists the tickers and descriptions of assets traded on the Moscow Exchange.
+
+The code can be used to analyze any financial asset by changing the ticker and its description. The `txt` folder must contain the data downloaded for that asset.
 
 ## 🖼️ Report samples
 
@@ -73,7 +73,7 @@ relative to its own multi-year history, with no reference to fundamentals.
 Run from the project folder:
 
 ```bash
-python3 main.py        
+python3 main.py       
 ```
 
 What happens on start:
@@ -218,6 +218,7 @@ A dictionary of the form:
 
 ```python
 'SBER': {'name': 'Акции Сбербанка', 'currency': 'RUB'},
+'NG':   {'name': 'Фьючерсы на газ', 'currency': 'USD'},
 ```
 
 - The key is the **ticker**, which must exactly match the file-name prefix in
